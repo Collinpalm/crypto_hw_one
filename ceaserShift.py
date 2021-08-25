@@ -7,12 +7,12 @@ def bruteDecrypt():
     for key in range(0, len(ALPHABET)):
         for element in range(0,len(ciphertext)):
             character = ord(ciphertext[element])
-            character = character - 64
+            character = character - 65
             character = (character + key) % 26
-            character = character + 64
+            character = character + 65
             temp = chr(character)
-            print(temp)
-    print("\n")
+            print(temp, end = '')
+        print("\n")
 
 if __name__ == '__main__':
     bruteDecrypt()
