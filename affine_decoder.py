@@ -2,7 +2,7 @@ import sys
 
 ALPHABET = "abcdefghijklmnopqrstuvwxyz"
 
-def bruteDecrypt():
+def decrypt():
     ciphertext = sys.argv[1]
     
 
@@ -12,4 +12,4 @@ def bruteDecrypt():
 
     
 if __name__ == '__main__':
-    bruteDecrypt()
+    decrypt()
