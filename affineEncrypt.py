@@ -10,6 +10,7 @@ def encrypt():
         character[i] = character[i] - 97
         i = i+1
     
+    
 
 
 
