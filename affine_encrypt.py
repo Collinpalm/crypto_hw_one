@@ -2,7 +2,7 @@ import sys
 
 ALPHABET = "abcdefghijklmnopqrstuvwxyz"
 
-def decrypt():
+def encrypt():
     ciphertext = sys.argv[1]
     
 
@@ -12,4 +12,4 @@ def decrypt():
 
     
 if __name__ == '__main__':
-    decrypt()
+    encrypt()
