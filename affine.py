@@ -12,8 +12,11 @@ def modInverse(a, m):
 
 
 def check(text):
-    if():
-        return True
+    dictionary = open("words.txt", "r")
+    for i in range(1, 1000):
+        line = dictionary.readline()
+        if(re.search(line, text) != None):
+            return True
     return False
         
 
