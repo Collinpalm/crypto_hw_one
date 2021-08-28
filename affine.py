@@ -35,12 +35,12 @@ def decryptKey(a, b, text):
 
 def bruteDecrypt():
     ciphertext = sys.argv[1]
-    character = [0]
+    character = []
     i = 0
-    print("a  b  text\n")
+    print("a  b  text")
     print("__________")
     for element in range(0,len(ciphertext)):
-        character[i] = ord(ciphertext[element])
+        character.append(ord(ciphertext[element]))
         character[i] = character[i] - 65
         i = i+1
     for i in [1,3,5,7,9,11,15,17,19,21,23,25]:
