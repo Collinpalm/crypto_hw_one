@@ -1,13 +1,19 @@
 import sys
 
-ALPHABET = "abcdefghijklmnopqrstuvwxyz"
+"""
+run this on the command line with the text to be 
+encrypted followed by the values of a and b
 
+"""
 def encrypt():
     plaintext = sys.argv[1]
     a = sys.argv[2]
     b = sys.argv[3]
     character = []
     cipherText = ""
+    i = 0
+    a = int(a)
+    b = int(b)
     for element in range(0,len(plaintext)):
         character.append(ord(plaintext[element]))
         character[i] = character[i] - 97
