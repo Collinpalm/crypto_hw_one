@@ -1,7 +1,7 @@
 import sys
 import re
 
-ALPHABET = "abcdefghijklmnopqrstuvwxyz"
+
 
 #code from one of my old projects, IDK its origins
 def modInverse(a, m):
@@ -12,24 +12,9 @@ def modInverse(a, m):
 
 
 def check(text):
-    for i in range(1, len(text)):
-        if((text[i-1] == text[i]) and (text[i] == ("q"or"j"or"w"or"k"or"y"or"v"))):
-            return False
-        if((text[i-1] == "j") and (text[i] == "q")):
-            return False
-        if((text[i-1] == "q") and (text[i] == "g")):
-            return False
-        if((text[i-1] == "q") and (text[i] == "k")):
-            return False
-        if((text[i-1] == "q") and (text[i] == "y")):
-            return False
-        if((text[i-1] == "q") and (text[i] == "z")):
-            return False
-        if((text[i-1] == "w") and (text[i] == "q")):
-            return False
-        if((text[i-1] == "w") and (text[i] == "z")):
-            return False
-    return True
+    if():
+        return True
+    return False
         
 
 
