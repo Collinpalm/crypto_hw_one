@@ -15,7 +15,7 @@ def check(text):
     dictionary = open("words.txt", "r")
     for i in range(1, 1000):
         line = dictionary.readline()
-        if(re.search(line, text) != None):
+        if line in text:
             return True
     return False
         
@@ -27,7 +27,9 @@ def decryptKey(a, b, text):
     newText = ""
     for i in range(0, len(text)):
         temp = (c * (text[i]+b))%26
+        temp += 97
         newText += chr(temp)
+    #print(newText)
     return newText
 
 
@@ -41,8 +43,9 @@ def bruteDecrypt():
     print("__________")
     for element in range(0,len(ciphertext)):
         character.append(ord(ciphertext[element]))
-        character[i] = character[i] - 65
+        character[i] = character[i] - 97
         i = i+1
+
     for i in [1,3,5,7,9,11,15,17,19,21,23,25]:
         for j in range(0,25):
             plaintext = decryptKey(i, j, character)
