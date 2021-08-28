@@ -41,7 +41,7 @@ def bruteDecrypt():
     print("__________")
     for element in range(0,len(ciphertext)):
         character[i] = ord(ciphertext[element])
-        character[i] = character - 65
+        character[i] = character[i] - 65
         i = i+1
     for i in [1,3,5,7,9,11,15,17,19,21,23,25]:
         for j in range(0,25):
