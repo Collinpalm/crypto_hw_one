@@ -14,10 +14,9 @@ def modInverse(a, m):
 def check(text):
     dictionary = open("words.txt", "r")
     for line in dictionary:
-        if (re.search(line, text)):
-            print("true")
+        print(re.search(line.strip(), text))
+        if (re.search(line.strip(), text) != None):
             return True
-        #print(line, " ", text)
     return False
         
 
@@ -46,17 +45,13 @@ def bruteDecrypt():
         character.append(ord(ciphertext[element]))
         character[i] = character[i] - 97
         i = i+1
-    plaintext = decryptKey(i, j, character)
-    check(plaintext)
-    print(i, "  ", j, "  ", plaintext, end = '\n')
-    """
     for i in [1,3,5,7,9,11,15,17,19,21,23,25]:
-        for j in range(0,25):
+        for j in range(0,26):
             plaintext = decryptKey(i, j, character)
-            #if(check(plaintext)):
-            print(i, "  ", j, "  ", plaintext, end = '\n')
+            if(check(plaintext)):
+                print(i, "  ", j, "  ", plaintext, end = '\n')
 
-"""
+
 
 
 
