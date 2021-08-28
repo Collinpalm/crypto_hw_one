@@ -13,11 +13,15 @@ def modInverse(a, m):
 
 def check(text):
     dictionary = open("words.txt", "r")
+    wordCount = 0
     for line in dictionary:
-        print(re.search(line.strip(), text))
-        if (re.search(line.strip(), text) != None):
-            return True
-    return False
+        #print(re.search(line.strip(), text))
+        if (re.search(line.strip(), text)):
+            wordCount += 1
+    if(wordCount >= 6):
+        return True
+    else:
+        return False
         
 
 
