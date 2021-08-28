@@ -2,6 +2,11 @@ import sys
 import re
 
 
+"""
+run this on the command line with the
+text to be decrypted
+"""
+
 
 #code from one of my old projects, IDK its origins
 def modInverse(a, m):

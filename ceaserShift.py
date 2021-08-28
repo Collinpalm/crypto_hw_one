@@ -1,5 +1,10 @@
 import sys
 
+"""
+run this on the command line to brute force
+the text you want decrypted
+"""
+
 ALPHABET = "abcdefghijklmnopqrstuvwxyz"
 
 def bruteDecrypt():
